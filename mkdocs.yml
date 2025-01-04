@@ -1,0 +1,48 @@
+site_name: Audeal Wiki
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Example: example.md
+  - API Reference:
+    - Namespaces: reference/namespaces.md
+    - Classes:
+      - adl::Audio: reference/audio-class/audio-class.md
+      - adl::Sound: reference/sound-class/sound-class.md
+
+theme:
+  name : material
+  features:
+    - navigation.footer
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Skelebyte
+    - icon: simple/itchdotio
+      link: https://skelebyte-studios.itch.io/
+    - icon: fontawesome/brands/bluesky 
+      link: https://bsky.app/profile/skelebyte.bsky.social
